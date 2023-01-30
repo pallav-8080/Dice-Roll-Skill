@@ -1,8 +1,14 @@
-# Volley on-site skill starter kit
-
-A starter kit for Alexa skills.
+# Volley assessment by pallav soni - create a custom alexa skill
+A customa alexa skill capabale of playing a dice roll game and listing top 10 high scores.
 
 ## **Getting Started**
+
+technologies
+unit testing
+ui/ux considerations
+challenges faced
+learnings
+
 
 You should receive this repository as a zip file. First ensure you have Node installed as well as Node's package manager, npm. [NVM](https://github.com/nvm-sh/nvm) is a good resource for installing Node. For your code editor, we recommend VS Code.
 
