@@ -1,4 +1,4 @@
-# Volley assessment by pallav soni
+# Volley assessment by Pallav Soni
 A custom alexa skill capabale of playing a dice roll game and listing top 10 high scores.
 
 ## **Getting Started with the skill**
