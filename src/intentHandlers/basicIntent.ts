@@ -18,7 +18,7 @@ export const HelpIntentHandler: Alexa.RequestHandler = {
   handle(handlerInput) {
     console.log("sssss");
     return handlerInput.responseBuilder
-      .speak("Try saying hello!")
+      .speak("How can i help you?")
       .getResponse();
   },
 };
