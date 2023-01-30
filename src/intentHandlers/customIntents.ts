@@ -59,7 +59,7 @@ export const RollDiceHandler: Alexa.RequestHandler = {
     console.log("rolling dice");
     let {attributesManager} = handlerInput;
 
-    // const diceAudio = '<audio src="https://audioclipsbucket.s3.us-west-2.amazonaws.com/dicee.mp3"/>';
+    const diceAudio = `<audio src="soundbank://soundlibrary/toys_games/board_games/board_games_08"/>`;
     var randomInt:number = Math.floor(Math.random()*6+1);
     console.log(randomInt);
 
@@ -75,7 +75,7 @@ export const RollDiceHandler: Alexa.RequestHandler = {
     }
     if(isGameOn(handlerInput)){
       return handlerInput.responseBuilder
-        .speak(`Rolling dice <break time"1s"/> annd the number is ${randomInt}`)
+        .speak(`Rolling dice ${diceAudio} and the number is ${randomInt}`)
         .withShouldEndSession(false)
         .getResponse();
     } else {
