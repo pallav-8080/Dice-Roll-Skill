@@ -14,7 +14,7 @@ export const SkillLaunchIntentHandler: Alexa.RequestHandler = {
     console.log("helllo");
     return handlerInput.responseBuilder
       .speak("Hello welcome to dice roll game! Do you want to play new game or listen to top 10 high scores?")
-      // .reprompt('please select')
+      .reprompt('please select to play a new game or listen to top 10 scores')
       .withShouldEndSession(false)
       .getResponse();
   },
@@ -35,7 +35,7 @@ export const StartGameHandler: Alexa.RequestHandler = {
       modifySessionAttribute("gameOn", true, handlerInput);
 
       return handlerInput.responseBuilder
-      .speak("Okay no worries lets start a new game. Say roll dice when you are ready?")
+      .speak("Okay no worries lets start a new game. Say roll dice when you are ready.")
       .withShouldEndSession(false)
       .getResponse();
     }
@@ -43,7 +43,7 @@ export const StartGameHandler: Alexa.RequestHandler = {
     modifySessionAttribute("gameOn", true, handlerInput);
 
     return handlerInput.responseBuilder
-      .speak("Ok lets play a new game. Say roll dice when you are ready?")
+      .speak("Ok lets play a new game. Say roll dice when you are ready.")
       .withShouldEndSession(false)
       .getResponse();
   },
@@ -75,11 +75,11 @@ export const RollDiceHandler: Alexa.RequestHandler = {
     }
     if(isGameOn(handlerInput)){
       return handlerInput.responseBuilder
-        .speak(`Rolling dice ${diceAudio} and the number is ${randomInt}`)
+        .speak(`Rolling dice ${diceAudio} and the number is ${randomInt}.  Say roll again to keep playing`)
         .withShouldEndSession(false)
         .getResponse();
     } else {
-      var speakRes:string = `Okay let me roll a dice for you.<break time="1s"/>`;
+      var speakRes:string = `Okay let me roll a dice for you <audio src="soundbank://soundlibrary/toys_games/board_games/board_games_08"/>`;
       speakRes+=`the number is ${randomInt}`;
 
       modifySessionAttribute("score", randomInt, handlerInput);
@@ -114,7 +114,7 @@ export const SaveScoreIntentHandler: Alexa.RequestHandler = {
       console.log("ssaved", res);
 
       return handlerInput.responseBuilder
-        .speak(`your score is saved under the name ${name}. Thanks for playing with me. See you soon again.`)
+        .speak(`your score is saved under the name ${name}. Thanks for playing with me. See you soon again!`)
         .withShouldEndSession(true)
         .getResponse();
     } else {
@@ -147,7 +147,7 @@ export const EndGameHandler: Alexa.RequestHandler = {
         .getResponse();
     } else {
       return handlerInput.responseBuilder
-        .speak(`Looks like you aren't in mood to play today. See you back soon`)
+        .speak(`Looks like you aren't in mood to play today. See you back soon!`)
         .withShouldEndSession(true)
         .getResponse();
     }
@@ -203,7 +203,7 @@ export const LiveScoreIntentHandler: Alexa.RequestHandler = {
 
     if(isScoreDefined(handlerInput)){
       return handlerInput.responseBuilder
-      .speak(`your curent score is saved under the name ${currentScore}. Say roll to keep playing`)
+      .speak(`your curent score is ${currentScore}. Say roll again to keep playing`)
       .withShouldEndSession(false)
       .getResponse();
       

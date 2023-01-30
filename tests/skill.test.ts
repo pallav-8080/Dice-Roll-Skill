@@ -21,7 +21,7 @@ alexaTest.initialize(
         {
           request: alexaTest.getLaunchRequest(),
           says: "Hello welcome to dice roll game! Do you want to play new game or listen to top 10 high scores?",
-          repromptsNothing: true,
+          repromptsNothing: false,
           shouldEndSession: false
         }
       ]);
@@ -32,7 +32,7 @@ alexaTest.initialize(
       alexaTest.test([
         {
           request: alexaTest.getIntentRequest("StartGameIntent"),
-          says: "Ok lets play a new game. Say roll dice when you are ready?",
+          says: "Ok lets play a new game. Say roll dice when you are ready.",
           repromptsNothing: true, shouldEndSession: false,
           hasAttributes: {
             score: 0,
@@ -47,7 +47,7 @@ alexaTest.initialize(
       alexaTest.test([
         {
           request: alexaTest.getIntentRequest("RollDiceIntent"),
-          saysLike: `Rolling dice <break time="1s"/> and the number is`,
+          saysLike: `Rolling dice <audio src="soundbank://soundlibrary/toys_games/board_games/board_games_08"/> and the number is`,
           repromptsNothing: true, shouldEndSession: false,
           withSessionAttributes: {
             score: 0,
@@ -61,7 +61,7 @@ alexaTest.initialize(
       alexaTest.test([
         {
           request: alexaTest.getIntentRequest("RollDiceIntent"),
-          saysLike: `Seems like you want to play a dice roll game. Okay let me roll a dice for you.<break time="1s"/>`,
+          saysLike: `Okay let me roll a dice for you`,
           repromptsNothing: true, shouldEndSession: false,
           withSessionAttributes: {
             score: 0,
@@ -116,7 +116,7 @@ alexaTest.initialize(
       alexaTest.test([
         {
           request: alexaTest.getIntentRequest("EndGameIntent"),
-          saysLike: `Your score is 100 <break time='1s' /> do you want to save your score?`,
+          says: `Your score is 100 <break time='1s' /> do you want to save your score?`,
           repromptsNothing: true, shouldEndSession: false,
           withSessionAttributes: {
             score: 100,
@@ -132,7 +132,7 @@ alexaTest.initialize(
       alexaTest.test([
         {
           request: alexaTest.getIntentRequest("AMAZON.YesIntent"),
-          saysLike: `By what name should i save your score?`,
+          says: `By what name should i save your score?`,
           repromptsNothing: false, shouldEndSession: false,
           withSessionAttributes: {
             score: 100,
@@ -147,7 +147,7 @@ alexaTest.initialize(
       alexaTest.test([
         {
           request: alexaTest.getIntentRequest("AMAZON.NoIntent"),
-          saysLike: `see you soon goodbye!`,
+          says: `see you soon goodbye!`,
           repromptsNothing: true, shouldEndSession: true,
           withSessionAttributes: {
             score: 100,

@@ -1,6 +1,6 @@
 import * as Alexa from "ask-sdk";
-import {CancelOrStopIntentHandler, NoIntentHandler, YesIntentHandler, HelpIntentHandler} from "./intents/basicIntent";
-import {    SkillLaunchIntentHandler, StartGameHandler, ListTopScoreHandler, EndGameHandler,   RollDiceHandler, SaveScoreIntentHandler, ErrorHandler, LiveScoreIntentHandler} from "./intents/customIntents";
+import {CancelOrStopIntentHandler, NoIntentHandler, YesIntentHandler, HelpIntentHandler} from "./intentHandlers/basicIntent";
+import { SkillLaunchIntentHandler, StartGameHandler, ListTopScoreHandler, EndGameHandler,   RollDiceHandler, SaveScoreIntentHandler, ErrorHandler, LiveScoreIntentHandler} from "./intentHandlers/customIntents";
 
 
 
