@@ -49,18 +49,12 @@ npm run deploy
 
 At this point the logic for your skill is "live", and you need to create the product wrapper that interprets and displays this logic to the user.
 
-### 3. **Creating a New Skill**
+### 3. **UI/UX considerations**
 
-1. [Create a new Amazon Alexa Skill](https://developer.amazon.com/alexa/console/ask/create-new-skill).
-    1. For **Choose a model to add to your skill**, choose **Custom**
-    2. For **Choose a method to host your skill's backend resources**, choose **Provision your Own**
-2. On the next page, select **Start from Scratch**.
-3. Set your endpoint:
-    1. Select **Endpoint** in the left hand navigation bar.
-    2. Replace the ARN in **Default Region** with your Lambda Function ARN.
-    3. Click **Save Endpoints**
+1. Added a **rolling dice audio(.mp3)** to intent resposne to make the **gaming experience** more lively and real.
+2. Added **repromts** wherever needed to **allow enough time** for user to response to alexa query.
+3. Added possible **one word alternatives** to intent **trigerrs** inorder to make it **easy and quick** for user to respond and navigate thorugh the game.
 
-At this point, you should be able to test the run the starter code in the **Test** tab at the top of the screen. Your default invocation phrase is the name you chose for your skill.
 
 ## **Challenges faced**
 
