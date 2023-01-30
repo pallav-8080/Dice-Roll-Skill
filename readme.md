@@ -1,33 +1,17 @@
 # Volley assessment by pallav soni
 A custom alexa skill capabale of playing a dice roll game and listing top 10 high scores.
 
-## **Getting Started**
-
-technologies
-unit testing
-ui/ux considerations
-challenges faced
-learnings
+## **Getting Started with the skill**
 
 
-You should receive this repository as a zip file. First ensure you have Node installed as well as Node's package manager, npm. [NVM](https://github.com/nvm-sh/nvm) is a good resource for installing Node. For your code editor, we recommend VS Code.
+You should be able to run the skill on any alexa enabled device. Use below commands to laucnh the skill.
 
-After extracting the repository, you should run through the following basic project commands:
+``` Open pallav's dice roll game``` - Lauch the skill
+``` Play new game ``` - Start a dice roll game
+``` Game over ``` - End a game
+``` by name ${yourFirstName}``` - when asked for a name to save score
+``` top 10 scores``` - To list top 10 high scores
 
-```sh
-cd volley-skill-starter
-npm install              # Installs project dependencies
-npm run build            # Builds the project (validate a good working state)
-code .                   # Open VS Code
-```
-
-When you open VS Code, the editor may prompt you to install the workspace's recommended extensions - you should click "Yes" to the prompt if you want autoformatting support. There are as well included
-
-After that point, you want to set up your AWS Lambda resource **[1]** and Alexa skill model **[2]** respectively.
-
-[1] _**AWS Lambda**_: The place where the code (implementation logic) of the skill lives.
-
-[2] _**Alexa skill model**_: The collection of intents, slots, configuration, endpoint etc. that make up the skill itself.
 ## **Technologies**
 
 1. AWS Lambda.
