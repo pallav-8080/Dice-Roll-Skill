@@ -62,15 +62,10 @@ At this point the logic for your skill is "live", and you need to create the pro
 
 At this point, you should be able to test the run the starter code in the **Test** tab at the top of the screen. Your default invocation phrase is the name you chose for your skill.
 
-## **Commands**
+## **Challenges faced**
 
-The skill starter begins with a simple and minimal "Hello World" skill, complete with deployment scripts, Typescript build scripts, and auto-formatting.
-
-We have a couple of scripts to facilitate development:
-
-* `npm run build` - Build the project and ensure no type errors are present.
-
-* `npm run deploy` - Deploy the code to Lambda
+1. Adding audio to an intent handler response.
+2. Setting up tests using mocha with typescript. (In the end switched to ts-mocha library)
 
 ## **Learnings**
 
