@@ -37,9 +37,19 @@ After that point, you want to set up your AWS Lambda resource **[1]** and Alexa 
 4. Choose **Alexa Skills Kit**.
 5. Select **Disable** for Skill ID verification.
 
-### 2. **Deploying your Code**
+## **A step ahead of requirements**
 
-First go to `package.json` and update the `deploy` script to use your lambda function, replacing `[arn]` with the one found on the AWS Lambda page.
+Took couple of initatives to develope a highly readbale and testable codebase.
+
+1. Unit testing
+ -- Added unit tests for all custom intent handler. Tested  happy flows and appropriate edge cases.
+ -- Explored possible options for testing the skill. Finalized the use of alexa-skill-test-framework (https://github.com/BrianMacIntosh/alexa-skill-test-framework).
+ -- run the command ```sh
+npm run test``` to start unit tests.
+2. Design pattern
+ -- Implemented Abstract Factory design pattern for developing easy to modify and extensible intent handlers for YES/NO prompts.
+ -- Reasoning - There could be mutiple YES/NO intents in resposne to different queries but they still fall under a single intent type Amazon.Yes /Amazon.No. The handler should be able map the response to a particular query(eg - save score?, did u like the game?, etc). Hence a YES/NO intent handler factory is needed to quickly extend handlers for future possible queries and map them  correctly.
+ 
 
 Then, to deploy your skill backend code:
 
@@ -49,7 +59,7 @@ npm run deploy
 
 At this point the logic for your skill is "live", and you need to create the product wrapper that interprets and displays this logic to the user.
 
-### 3. **UI/UX considerations**
+## **UI/UX considerations**
 
 1. Added a **rolling dice audio(.mp3)** to intent resposne to make the **gaming experience** more lively and real.
 2. Added **repromts** wherever needed to **allow enough time** for user to response to alexa query.
