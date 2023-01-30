@@ -4,6 +4,7 @@ dist
 ts.dist
 kit.dist
 coverage
+.vscode
 
 # Temporary cached TS build info
 *.tsbuildinfo
