@@ -42,8 +42,8 @@ After that point, you want to set up your AWS Lambda resource **[1]** and Alexa 
 Took couple of initatives to develope a highly readbale and testable codebase.
 
 1. **Unit testing**
-    1. Added unit tests for all custom intent handler. Tested  happy flows and appropriate edge cases.
-    2. Explored possible options for testing the skill. Finalized the use of alexa-skill-test-framework (https://github.com/BrianMacIntosh/alexa-skill-test-framework).
+    -- Added unit tests for all custom intent handler. Tested  happy flows and appropriate edge cases.
+    -- Explored possible options for testing the skill. Finalized the use of alexa-skill-test-framework (https://github.com/BrianMacIntosh/alexa-skill-test-framework).
     3. use the command ```npm run test``` to run unit tests.
  
 2. **Design pattern**
