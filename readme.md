@@ -42,6 +42,9 @@ After that point, you want to set up your AWS Lambda resource **[1]** and Alexa 
 Took couple of initatives to develope a highly readbale and testable codebase.
 
 1. **Unit testing**
+  1. Added a **rolling dice audio(.mp3)** to intent resposne to make the **gaming experience** more lively and real.
+  2. Added **repromts** wherever needed to **allow enough time** for user to response to alexa query.
+  3. Ad
 -- Added unit tests for all custom intent handler. Tested  happy flows and appropriate edge cases.
 -- Explored possible options for testing the skill. Finalized the use of alexa-skill-test-framework (https://github.com/BrianMacIntosh/alexa-skill-test-framework).
  -- use the command ```npm run test``` to run unit tests.
