@@ -2,7 +2,7 @@
 A custom alexa skill capabale of playing a dice roll game and listing top 10 high scores.
 
 
-## switch to master branch for the code##
+## ------ switch to master branch for the code ----------
 
 
 ## **Getting Started with the skill**
