@@ -1,5 +1,5 @@
-# Volley assessment by pallav soni - create a custom alexa skill
-A customa alexa skill capabale of playing a dice roll game and listing top 10 high scores.
+# Volley assessment by pallav soni
+A custom alexa skill capabale of playing a dice roll game and listing top 10 high scores.
 
 ## **Getting Started**
 
@@ -72,6 +72,9 @@ We have a couple of scripts to facilitate development:
 
 * `npm run deploy` - Deploy the code to Lambda
 
-## **Next Steps**
+## **Learnings**
 
-Developing your product further will involve creating new handlers for new intents, modifying existing handlers, managing user state (both session-state and persistent state) and perhaps creating new utility functions as appropriate. Good luck!
+1. Worked with alexa skills for first time and hence picked up available functionalities and development flow for creating a custom skill.
+2. **Unit testing** alexa skills using the **alexa-skill-test** framework.
+3. Deploying and testing alexa skills on actual device. In this case tested using the **Alexa app** on iphone and android.
+4. Writing AWS S3 bucket **permissiona policies**.
