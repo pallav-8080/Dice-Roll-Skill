@@ -28,14 +28,13 @@ After that point, you want to set up your AWS Lambda resource **[1]** and Alexa 
 [1] _**AWS Lambda**_: The place where the code (implementation logic) of the skill lives.
 
 [2] _**Alexa skill model**_: The collection of intents, slots, configuration, endpoint etc. that make up the skill itself.
+## **Technologies**
 
-### 1. **Creating an AWS Lambda Function**
-
-1. [Create a new AWS Lambda Function](https://console.aws.amazon.com/lambda/home?region=us-east-1#/create/function).
-2. Give function name and choose **Create a new role with basic Lambda permissions**.
-3. Under the **Designer** subheading, click **Add Trigger**.
-4. Choose **Alexa Skills Kit**.
-5. Select **Disable** for Skill ID verification.
+1. AWS Lambda.
+2. AWS DynamoDB
+3. Alexa-skill-tesing-framework
+4. Alexa Skills Kit
+5. Typescript
 
 ## **A step ahead of requirements**
 
