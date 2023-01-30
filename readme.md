@@ -6,11 +6,11 @@ A custom alexa skill capabale of playing a dice roll game and listing top 10 hig
 
 You should be able to run the skill on any alexa enabled device. Use below commands to navigate through the skill. (ou may use one word or synonyms)
 
-**Lauch the skill** -  ``` open pallav's dice roll game``` <br/>
-**Start a dice roll game** - ``` play game ```<br/>
-**End a game**  - ``` game over ```<br/>
-**When asked for a name to save score**  - ``` by name ${yourFirstName}``` <br/>
-**To list top 10 high scores**  - ``` top 10 scores ``` <br/>
+**Lauch the skill** -  ``` open pallav's dice roll game``` <br/><br/>
+**Start a dice roll game** - ``` play game ```<br/><br/>
+**End a game**  - ``` game over ```<br/><br/>
+**When asked for a name to save score**  - ``` by name ${yourFirstName}``` <br/><br/>
+**To list top 10 high scores**  - ``` top 10 scores ``` <br/><br/>
 
 ## **Technologies**
 
