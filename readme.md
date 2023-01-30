@@ -41,12 +41,12 @@ After that point, you want to set up your AWS Lambda resource **[1]** and Alexa 
 
 Took couple of initatives to develope a highly readbale and testable codebase.
 
-1. Unit testing
- -- Added unit tests for all custom intent handler. Tested  happy flows and appropriate edge cases.
- -- Explored possible options for testing the skill. Finalized the use of alexa-skill-test-framework (https://github.com/BrianMacIntosh/alexa-skill-test-framework).
+1. **Unit testing**
+-- Added unit tests for all custom intent handler. Tested  happy flows and appropriate edge cases.
+-- Explored possible options for testing the skill. Finalized the use of alexa-skill-test-framework (https://github.com/BrianMacIntosh/alexa-skill-test-framework).
  -- use the command ```npm run test``` to run unit tests.
  
-2. Design pattern
+2. **Design pattern**
  -- Implemented Abstract Factory design pattern for developing easy to modify and extensible intent handlers for YES/NO prompts.
  -- Reasoning - There could be mutiple YES/NO intents in resposne to different queries but they still fall under a single intent type Amazon.Yes /Amazon.No. The handler should be able map the response to a particular query(eg - save score?, did u like the game?, etc). Hence a YES/NO intent handler factory is needed to quickly extend handlers for future possible queries and map them  correctly.
  
